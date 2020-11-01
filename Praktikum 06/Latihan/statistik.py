@@ -1,4 +1,4 @@
-def sum(*semuaAngka):
+def summarize(*semuaAngka):
     jumlahKeseluruhan = 0
     for angka in semuaAngka:
         jumlahKeseluruhan += angka
@@ -14,7 +14,9 @@ def average(*semuaAngka):
 def maks(*semuaAngka):
     dataTerbesar = semuaAngka[0]
     for angka in semuaAngka:
-        if(angka > dataTerbesar):
+        if not dataTerbesar:
+            dataTerbesar = angka
+        elif(angka > dataTerbesar):
             dataTerbesar = angka
     hasilnya = dataTerbesar
     return hasilnya
@@ -22,7 +24,9 @@ def maks(*semuaAngka):
 def min(*semuaAngka):
     dataTerkecil = semuaAngka[0]
     for angka in semuaAngka:
-        if(angka < dataTerkecil):
+        if not dataTerkecil:
+            dataTerkecil = angka
+        elif(angka < dataTerkecil):
             dataTerkecil = angka
     hasilnya = dataTerkecil
     return hasilnya
