@@ -1,14 +1,14 @@
 def summarize(*semuaAngka):
     jumlahKeseluruhan = 0
     for angka in semuaAngka:
-        jumlahKeseluruhan += angka
+        jumlahKeseluruhan = jumlahKeseluruhan + angka
     return jumlahKeseluruhan
 
 def average(*semuaAngka):
     hitung = 0
     for angka in semuaAngka:
-        hitung += 1
-    jumlahKeseluruhan = sum(*semuaAngka) / hitung
+        hitung = hitung + 1
+    jumlahKeseluruhan = summarize(*semuaAngka) / hitung
     return jumlahKeseluruhan
 
 def maks(*semuaAngka):
@@ -16,7 +16,7 @@ def maks(*semuaAngka):
     for angka in semuaAngka:
         if not dataTerbesar:
             dataTerbesar = angka
-        elif(angka > dataTerbesar):
+        if(angka > dataTerbesar):
             dataTerbesar = angka
     hasilnya = dataTerbesar
     return hasilnya
