@@ -1,11 +1,13 @@
 n = 0
 sum = 0
-print("|===================================|")
-print("| Program Hitung Rata-Rata Bro Bro  |")
-print("|===================================|")
+def ProgramHitungdata():
+    print("|===================================|")
+    print("| Program Hitung Rata-Rata Bro Bro  |")
+    print("|===================================|")
+    
 while True:
+    angka = int(input("Silahkan Masukan bil Bulat : "))
     try:
-        angka = int(input("Silahkan Masukan bil Bulat : "))
         n = n + 1
         sum = sum + angka
         ulang = input("Ulangi kembali (y/n) ? : ")
