@@ -1,4 +1,7 @@
 filename = "data.txt"
+print("=============== Jika pengalamatan Path file salah =============")
+def bacafile2():
+    filename = "data.txt"
 try:
     file = open("c:/data.txt", "r")
     bil1 = int(file.readline())
@@ -10,6 +13,9 @@ except FileNotFoundError:
     print('tidak ditemukan', filename)
 except ZeroDivisionError:
     print('Pembagian tidak boleh dengan angka 0')
+
+print("")
+print("=============== Jika pengalamatan Path file benar, dan pembagian dengan 0 =============")
 try:
     file = open("d:/data.txt", "r")
     bil1 = int(file.readline())
