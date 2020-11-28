@@ -8,8 +8,8 @@ DaftarBuahBuahan = {
 
 def spawn(): #fungsi awal program dijalankan
     print("-"*20)
-    print("A. Tambah Buku")
-    print("B. Beli Buku")
+    print("A. Tambah Buah")
+    print("B. Beli Buah")
     print("C. Tampilkan List Buah")
     print("D. Exit")
     print()
@@ -25,27 +25,26 @@ def selectMenu():
     if pilih == 'B':
         BeliBuah()
     if pilih == 'C':
-        TampilBu()
+        TampilBuah()
     if pilih == 'D':
         print("Terimakasih sudah menggunakan program ")
         exit()
         selectMenu()
     
 def TambahData():
-    print("Input Buku Baru")
+    print("Input Buah Baru")
     print("="*20)
     judul = input("Masukan Nama Buah  : ")
     harga = input("Masukan Harga Buah : ")
     print("-"*20)
     hargaint = 0
     try:
-        harga = int(harga)
+        hargaint = int(harga)
     except:
         input("Terjadi kesalahan! pastikan hanya menginput angka saat diminta mengisi harga\nTekan enter untuk mengulangi proses input")
-        tambahBuku()
+        TambahData()
     DaftarBuahBuahan[judul] = hargaint;
     input("Buah " + judul + " Berhasil di input . tekan Enter untuk kembali")
-    print(DaftarBuahBuahan)
     spawn();
 
 def BeliBuah():
@@ -68,7 +67,7 @@ def BeliBuah():
         break        
     spawn()
 
-def TampilBu():
+def TampilBuah():
     print("Daftar Buah yang tersedia")
     print("="*20)
     nobuah = 1
