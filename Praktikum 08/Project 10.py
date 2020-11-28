@@ -18,6 +18,8 @@ def BeliBuah():
             print("="*50)
             inpPilihan = str(input("Beli buah yang lain (y/n) ?  = "))
             TotalHarga += (DaftarBuahBuahan[memilih]*masukanBerat)
+            if inpPilihan == "y":
+                continue
             if inpPilihan == "n":
                 print("Total harga           : Rp.",TotalHarga)
                 break
