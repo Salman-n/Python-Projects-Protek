@@ -1,7 +1,7 @@
 import random
 n = (int(input("berapa kali acak ? :")))
 def shuff(n):
-    val = "acuk"
+    val = (input("masukan kata yang ingin diacak ?: "))
     daftaracak = []
     for indi in range(n):
         x = list(val)
@@ -9,5 +9,7 @@ def shuff(n):
         res = "".join(x)
         if res not in daftaracak:
             daftaracak.append(res)
-        print(res)
+        print([res])
+        print("-"* 25)
+
 shuff(n)
