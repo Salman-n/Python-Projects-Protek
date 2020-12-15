@@ -4,11 +4,11 @@ x = (input("masukan kata : "))
 def shuff(x,n):
     val = x
     daftaracak = []
+    x = list(val)
     for indi in range(n):
-        x = list(val)
         random.shuffle(x)
         res = ("".join(x))
         if res not in daftaracak:
             daftaracak.append(res)
-        print([res],end ="")
+    print(daftaracak,end ="")
 shuff(x,n)
