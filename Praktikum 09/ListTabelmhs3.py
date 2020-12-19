@@ -11,8 +11,9 @@ print("="* 90)
 print(bar1.ljust(7), bar2.ljust(20), bar3.ljust(20), bar4.ljust(20))
 print("-"* 90)
 
-for pisahdata in mhs :
-     pisah = pisahdata.split(":")
-     tanggal = pisah[3].replace("-","/")
-     print(pisah[0].ljust(7),pisah[1].ljust(20),pisah[2].ljust(20),pisah[3])
+for pisahkandata in mhs :
+     pisah = pisahkandata.split(":")
+     tanggal = pisah[2]
+     pisahtanggal=tanggal.split('-')
+     print(pisah[0].ljust(7),pisah[1].ljust(20),pisahtanggal[2],'/',pisahtanggal[1],'/',pisahtanggal[0].ljust(10),pisah[3])
 print("-"* 90)
