@@ -3,3 +3,5 @@ Tugas Pemrograman Praktikum Semester 1 UNS
 Salman Wiryansyah Kelas B
 K3520070
 PTIK
+
+Forget 'code' just be a good friend! 
