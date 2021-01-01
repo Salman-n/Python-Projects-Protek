@@ -1,3 +1,0 @@
-|177013|Test|Buku Tes|2020-12-28|2021-01-04
-|M01|Agus|Pemrograman Python|2020-12-30|2021-01-06
-|M02|Budi|Pemrograman Pascal|2020-12-30|2021-01-06
